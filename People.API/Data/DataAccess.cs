@@ -40,7 +40,6 @@ namespace People.API.Data
             // Get and set Id
             var id = tbPeople.Max(s => s.Id) + 1;
             people.Id = id;
-
             tbPeople.Add(people);
             return Task.FromResult(people);
         }

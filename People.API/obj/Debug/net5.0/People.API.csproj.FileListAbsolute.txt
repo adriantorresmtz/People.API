@@ -26,3 +26,4 @@ C:\Sandbox\Net-Core\PeopleApp\People.API\obj\Debug\net5.0\People.API.dll
 C:\Sandbox\Net-Core\PeopleApp\People.API\obj\Debug\net5.0\ref\People.API.dll
 C:\Sandbox\Net-Core\PeopleApp\People.API\obj\Debug\net5.0\People.API.pdb
 C:\Sandbox\Net-Core\PeopleApp\People.API\obj\Debug\net5.0\People.API.genruntimeconfig.cache
+C:\Sandbox\Net-Core\PeopleApp\People.API\obj\Debug\net5.0\People.API.csproj.CopyComplete

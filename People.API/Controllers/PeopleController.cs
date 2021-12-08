@@ -24,6 +24,8 @@ namespace People.API.Controllers
 
         #endregion
 
+        //example: http://localhost:5090/api/People
+
         // GET: api/<People>
         [HttpGet]
         public Task<List<PersonModel>> Get()
@@ -33,31 +35,24 @@ namespace People.API.Controllers
 
         // GET api/<People>/5
         [HttpGet("{id}")]
-        public Task<PersonModel> Get(int id)
-        {
-            return _db.GetPeopleById(id);
-        }
+        public Task<PersonModel> Get(int id) => _db.GetPeopleById(id);
 
         // POST api/<People>
         [HttpPost]
-        public Task<PersonModel> Post([FromBody] PersonModel data)
-        {
-            return _db.AddPeople(data);
-        }
+        public Task<PersonModel> Post([FromBody] PersonModel data) => _db.AddPeople(data);
+
+        //example: http://localhost:5090/api/People/add
+        // POST api/<People>/add
+        [HttpPost("add")]
+        public Task<PersonModel> CreatePerson(PersonModel data) => _db.AddPeople(data);
 
         // PUT api/<People>
         [HttpPut]
-        public Task<PersonModel> Put([FromBody] PersonModel data)
-        {
-            return _db.UpdPeople(data);
-        }
+        public Task<PersonModel> Put([FromBody] PersonModel data) => _db.UpdPeople(data);
 
         // DELETE api/<People>/1
         [HttpDelete("{id}")]
-        public Task Delete(int id)
-        {
-            return _db.DelPeople(id);
-        }
+        public Task Delete(int id) => _db.DelPeople(id);
 
     }
 }

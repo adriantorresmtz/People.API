@@ -7,11 +7,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using People.API.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DataAccess.Data;
+using DataAccess.Models;
+using DataAccess.DbAccess;
 
 namespace People.API
 {
@@ -27,8 +29,10 @@ namespace People.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Set dependency for DataAccess
-            services.AddSingleton<IDataAccess, DataAccess>(); 
+            // Set dependency for DataAccess 
+            services.AddSingleton<IDataBaseAccess, SqlDataAccess>();
+            services.AddSingleton<IDataAccess<PersonModel>, DataAccessSQL>();
+            //services.AddSingleton<IDataAccess<PersonModel>, DataAccessMemory>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

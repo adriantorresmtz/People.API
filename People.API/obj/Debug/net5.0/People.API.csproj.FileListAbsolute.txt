@@ -27,3 +27,15 @@ C:\Sandbox\Net-Core\PeopleApp\People.API\obj\Debug\net5.0\ref\People.API.dll
 C:\Sandbox\Net-Core\PeopleApp\People.API\obj\Debug\net5.0\People.API.pdb
 C:\Sandbox\Net-Core\PeopleApp\People.API\obj\Debug\net5.0\People.API.genruntimeconfig.cache
 C:\Sandbox\Net-Core\PeopleApp\People.API\obj\Debug\net5.0\People.API.csproj.CopyComplete
+C:\Sandbox\Net-Core\PeopleApp\People.API\bin\Debug\net5.0\Dapper.dll
+C:\Sandbox\Net-Core\PeopleApp\People.API\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Sandbox\Net-Core\PeopleApp\People.API\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Sandbox\Net-Core\PeopleApp\People.API\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Sandbox\Net-Core\PeopleApp\People.API\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Sandbox\Net-Core\PeopleApp\People.API\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Sandbox\Net-Core\PeopleApp\People.API\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Sandbox\Net-Core\PeopleApp\People.API\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Sandbox\Net-Core\PeopleApp\People.API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Sandbox\Net-Core\PeopleApp\People.API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Sandbox\Net-Core\PeopleApp\People.API\bin\Debug\net5.0\DataAccessLlibrary.dll
+C:\Sandbox\Net-Core\PeopleApp\People.API\bin\Debug\net5.0\DataAccessLlibrary.pdb

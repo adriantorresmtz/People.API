@@ -1,0 +1,12 @@
+C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\bin\Debug\net5.0\DataAccessLlibrary.deps.json
+C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\bin\Debug\net5.0\DataAccessLlibrary.dll
+C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\bin\Debug\net5.0\ref\DataAccessLlibrary.dll
+C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\bin\Debug\net5.0\DataAccessLlibrary.pdb
+C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\obj\Debug\net5.0\DataAccessLlibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\obj\Debug\net5.0\DataAccessLlibrary.AssemblyInfoInputs.cache
+C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\obj\Debug\net5.0\DataAccessLlibrary.AssemblyInfo.cs
+C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\obj\Debug\net5.0\DataAccessLlibrary.csproj.CoreCompileInputs.cache
+C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\obj\Debug\net5.0\DataAccessLlibrary.dll
+C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\obj\Debug\net5.0\ref\DataAccessLlibrary.dll
+C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\obj\Debug\net5.0\DataAccessLlibrary.pdb
+C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\obj\Debug\net5.0\DataAccessLlibrary.csproj.AssemblyReference.cache

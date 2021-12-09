@@ -9,12 +9,12 @@ using DataAccess.Models;
 
 namespace DataAccess.Data
 {
-    public class DataAccessSQL : IDataAccess<PersonModel>
+    public class DataAccessSQLDapper : IDataAccess<PersonModel>
     {
         private readonly IDataBaseAccess _db;
 
         #region Constructor
-        public DataAccessSQL(IDataBaseAccess db)
+        public DataAccessSQLDapper(IDataBaseAccess db)
         {
             this._db = db;
         }

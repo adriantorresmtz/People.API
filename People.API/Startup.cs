@@ -14,6 +14,8 @@ using System.Threading.Tasks;
 using DataAccess.Data;
 using DataAccess.Models;
 using DataAccess.DbAccess;
+using DataAccessLlibrary.DataAccess;
+using Microsoft.EntityFrameworkCore;
 
 namespace People.API
 {
@@ -29,11 +31,20 @@ namespace People.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+           // Set Connection for SQLServer for EF
+            services.AddDbContext<PersonDbContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("Default"));
+            });
+
             // Set dependency for DataAccess 
             services.AddSingleton<IDataBaseAccess, SqlDataAccess>();
-            services.AddSingleton<IDataAccess<PersonModel>, DataAccessSQL>();
-            //services.AddSingleton<IDataAccess<PersonModel>, DataAccessMemory>();
 
+            services.AddSingleton<IDataAccess<PersonModel>, DataAccessMemory>();
+            //services.AddTransient<IDataAccess<PersonModel>, DataAccessSQLDapper>(); // Use with Dapper
+            //services.AddTransient<IDataAccess<PersonModel>, DataAccessSQLEF>(); // Use this with EF
+
+ 
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

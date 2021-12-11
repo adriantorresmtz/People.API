@@ -40,9 +40,9 @@ namespace People.API
             // Set dependency for DataAccess 
             services.AddSingleton<IDataBaseAccess, SqlDataAccess>();
 
-            services.AddSingleton<IDataAccess<PersonModel>, DataAccessMemory>();
+            //services.AddSingleton<IDataAccess<PersonModel>, DataAccessMemory>();
             //services.AddTransient<IDataAccess<PersonModel>, DataAccessSQLDapper>(); // Use with Dapper
-            //services.AddTransient<IDataAccess<PersonModel>, DataAccessSQLEF>(); // Use this with EF
+            services.AddTransient<IDataAccess<PersonModel>, DataAccessSQLEF>(); // Use this with EF
 
  
             services.AddControllers();

@@ -25,7 +25,7 @@ namespace DataAccess.Data
 
         public async Task<PersonModel> GetById(int id)
         {
-            return await _db.Person.Where(w => w.Id == id).FirstOrDefaultAsync();
+            return await _db.Person.FindAsync(id);
         }
 
         public async Task<PersonModel> Insert(PersonModel people)
@@ -38,16 +38,17 @@ namespace DataAccess.Data
 
         public async Task<PersonModel> Update(PersonModel people)
         {
-            var id = people.Id;
-            var entity = await _db.Person.Where(w => w.Id == id).FirstOrDefaultAsync();
+            var Id = people.Id;
+            var entity = await _db.Person.FindAsync(Id);
             _db.Entry(entity).CurrentValues.SetValues(people);
+            await _db.SaveChangesAsync();
 
             return entity;
         }
 
         public async Task Delete(int Id)
         {
-            var entity = await _db.Person.Where(w => w.Id == Id).FirstOrDefaultAsync();
+            var entity = await _db.Person.FindAsync(Id);
             _db.Person.Remove(entity);
             await _db.SaveChangesAsync();
         }

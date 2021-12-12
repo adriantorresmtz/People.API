@@ -51,7 +51,7 @@ namespace People.API
             services.AddSingleton<IDataAccess<PersonModel>, DataAccessMemory>();
             //services.AddTransient<IDataAccess<PersonModel>, DataAccessSQLDapper>(); // Use with Dapper
             //services.AddTransient<IDataAccess<PersonModel>, DataAccessSQLEF>(); // Use this with EF
-            //services.AddSingleton<IDataAccess<PersonModel>, DataAccessMongoDB>();
+            //services.AddSingleton<IDataAccess<PersonModel>, DataAccessMongoDB>(); // Use this for MongoDb
 
             //Load MongoDBSettings from appsettings.json
             services.Configure<MongoDBSettings>(Configuration.GetSection(nameof(MongoDBSettings)));

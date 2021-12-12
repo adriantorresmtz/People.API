@@ -6,6 +6,6 @@ This project has been created with .Net 5, with many repositories types, this pr
 a) Memory Repository
 b) Dapper (SQL)
 c) Entity Framework (SQL) 
-d) MongoDB
+d) MongoDB (No-SQL)
 
 In the StartUp we set de dependency Injection, we need to uncomment the implementation we want to use.

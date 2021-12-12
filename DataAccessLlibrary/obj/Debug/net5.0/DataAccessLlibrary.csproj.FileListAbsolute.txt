@@ -12,4 +12,3 @@ C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\obj\Debug\net5.0\DataAccessLlib
 C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\bin\Debug\net5.0\DataAccessLlibrary.runtimeconfig.json
 C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\bin\Debug\net5.0\DataAccessLlibrary.runtimeconfig.dev.json
 C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\obj\Debug\net5.0\DataAccessLlibrary.genruntimeconfig.cache
-C:\Sandbox\Net-Core\PeopleApp\DataAccessLlibrary\obj\Debug\net5.0\DataAccessLlibrary.csproj.AssemblyReference.cache

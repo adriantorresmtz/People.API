@@ -16,6 +16,10 @@ using DataAccess.Models;
 using DataAccess.DbAccess;
 using DataAccessLlibrary.DataAccess;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using MongoDB.Bson.Serialization;
+using MongoDB.Bson.Serialization.Serializers;
+using MongoDB.Bson;
 
 namespace People.API
 {
@@ -37,14 +41,23 @@ namespace People.API
                 options.UseSqlServer(Configuration.GetConnectionString("Default"));
             });
 
+            // MongoDb Settings 
+            BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
+            BsonSerializer.RegisterSerializer(new DateTimeOffsetSerializer(BsonType.String));
+
             // Set dependency for DataAccess 
             services.AddSingleton<IDataBaseAccess, SqlDataAccess>();
 
             services.AddSingleton<IDataAccess<PersonModel>, DataAccessMemory>();
             //services.AddTransient<IDataAccess<PersonModel>, DataAccessSQLDapper>(); // Use with Dapper
             //services.AddTransient<IDataAccess<PersonModel>, DataAccessSQLEF>(); // Use this with EF
+            //services.AddSingleton<IDataAccess<PersonModel>, DataAccessMongoDB>();
 
- 
+            //Load MongoDBSettings from appsettings.json
+            services.Configure<MongoDBSettings>(Configuration.GetSection(nameof(MongoDBSettings)));
+            //Creat DI for MongoDBSettings
+            services.AddSingleton<IMongoDBSettings>(d => d.GetRequiredService<IOptions<MongoDBSettings>>().Value);
+            
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
